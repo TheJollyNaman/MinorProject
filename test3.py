@@ -43,7 +43,7 @@ def recognize_faces_in_folder(folder_path, threshold=0.5):
             # Make prediction using the SVM model
             confidence = svm_model.decision_function(feat.reshape(1, -1))
             predicted_class_index = np.argmax(confidence)
-            # mean(confidence[0])
+            mean(confidence[0])
             print(confidence[0])
             if confidence[0, predicted_class_index] > threshold:
                 recognized_id = svm_model.predict(feat.reshape(1, -1))

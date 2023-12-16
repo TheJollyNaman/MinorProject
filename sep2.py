@@ -28,7 +28,7 @@ def capture_and_save_frame(camera_index=0, output_path="captured_frame.jpg"):
 
     # Release the video capture
     vid.release()
-    cv2.destroyAllWindows()
+
     return frame
 
 if __name__ == "__main__":
